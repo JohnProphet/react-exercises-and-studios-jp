@@ -1,23 +1,25 @@
 import { useState } from 'react';
 
-const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+const RecipeAuthor = () => 
+{
+   let authorLink = "https://www.venturebrosblog.com/2011/05/suffering-bastard-cocktail-recipe/";
+   let authorPhoto = "https://miro.medium.com/v2/format:webp/1*1FzmxzXc7JMXNw8zVZWpMg.jpeg";
+   let authorName = "Dr. Thadeus 'Rusty' Venture";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "Dr. Thadeus 'Rusty' Venture" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
-         </div>
+      </div>
       </div>
    );
 }
 
-const RecipeIngredients = () => {
-   const ingredients = [];
+const RecipeIngredients = () => 
+{
+   const ingredients = ["Brandy", "Gin", "Sweetened Lime Juice", "Bitters", "Ginger Ale"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -32,7 +34,8 @@ const RecipeIngredients = () => {
    );
 }
 
-const RecipeDescription = () => {
+const RecipeDescription = () => 
+{
    return (
       <div> 
          <div>
@@ -47,13 +50,15 @@ const RecipeDescription = () => {
    );
 }
 
-const RecipePhoto = () => {
+const RecipePhoto = () => 
+{
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.venturebrosblog.com/wp-content/uploads/2011/05/venture-bros-suffering-bastard-recipe.jpg" alt="Suffering Bastard recipe" className="imageUpdates"/>
    );
 }
 
-export default function RecipeDisplay () {
+export default function RecipeDisplay () 
+{
    return(
       <div className="recipePhotoBlock">
          <RecipePhoto />
